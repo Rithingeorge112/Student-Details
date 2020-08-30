@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Detail</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .details {
+            background-color: rgb(1, 211, 141);
+            display: flex;
+            width: 400px;
+            max-width: 100%;
+        }
+
+        .label {
+            width: 40%;
+            background-color: rgb(94, 167, 250);
+            color: rgba(27, 27, 27, 0.945);
+        }
+
+        p {
+            padding: 10px;
+            border-bottom: 1px solid rgba(27, 27, 27, 0.945);
+            font-size: 1.2rem;
+            letter-spacing: 0.2px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .value {
+            width: 60%;
+            background-color: rgb(200, 226, 255);
+            color: rgba(27, 27, 27, 0.945);
+        }
+    </style>
+    <div class="details">
+        <div class="label">
+            <p>Student Id</p>
+            <p>Student Name</p>
+            <p>Gender</p>
+            <p>Date Of Birth</p>
+            <p>City</p>
+            <p>State</p>
+            <p>Email Id</p>
+            <p>Qualification</p>
+            <p>Stream</p>
+        </div>
+        <div class="value">
+            <p class="student-id">{{ id }}</p>
+            <p class="student-name">{{ name }}</p>
+            <p class="gender">{{ gender }}</p>
+            <p class="dob">{{ dob }}</p>
+            <p class="city">{{ city }}</p>
+            <p class="state">{{ state }}</p>
+            <p class="email">{{ email }}</p>
+            <p class="qualification">{{ degree}}</p>
+            <p class="stream">{{ stream}}</p>
+        </div>
+    </div>
+</body>
+
+</html>

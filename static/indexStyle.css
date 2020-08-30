@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+a{
+    display: block;
+    margin: 10px;
+    background-color: rgb(144, 173, 255);
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+a:hover{
+    background-color: rgb(113, 150, 250);
+}
+a:active{
+    background-color: rgb(86, 131, 255);
+    transform: scale(0.99);
+}

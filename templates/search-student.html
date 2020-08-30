@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add-student-style.css')}}">
+</head>
+<body>
+    <style>
+        p{
+            background-color: rgb(252, 145, 145);
+            padding: 3px;
+            border-radius: 4px;
+            width: 100%;
+        }
+    </style>
+    <form action="{{ url_for('singleStudent')}}" method="POST">
+        <label for="student-id">Student Id</label>
+        <input type="text" name="student-id" id="student-id" required>
+        {% if(Max) %}
+        <p>Maximum student is {{ Max }}</p>
+        {% endif %}
+        <input type="submit" name="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>

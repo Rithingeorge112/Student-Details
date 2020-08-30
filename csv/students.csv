@@ -1,0 +1,7 @@
+Student Id, Name, Gender, DateOfBirth, City, State, EmailId, Qualification, Stream
+1,Raj,Male,10-10-1995,Mumbai,Maharastra,raj@gmail.com,B.E,Electronics
+2,Priyanka,Female,20-10-1995,Pune,Maharastra,priyanka@gmail.com,B.Tech,IT
+3,Prabhu,male,1999-04-08,Coimbatore,Tamil Nadu,prabhu.ece001@gmail.com,B.E,Electronics
+4,Rithin,male,1997-08-01,Coimbatore,Tamil Nadu,rithin.george@gmail.com,B.E,Mechanical
+5,B.Manoj,male,1998-09-19,Coimbatore,Tamil Nadu,manoj@gmail.com,M.E,DataScience
+6,Raja,male,2020-08-30,Krishnagiri,Tamil Nadu,raja001@gmail.com,12th,Physics

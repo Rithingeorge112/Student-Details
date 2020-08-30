@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Student Detail</title>
+</head>
+
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .label {
+            display: grid;
+            grid-template-columns: 1fr 3.5fr 2fr 3fr 3fr 3fr 5fr 2fr 2fr;
+            background-color: rgb(94, 167, 250);
+            color: rgba(27, 27, 27, 0.945);
+        }
+        p {
+            padding: 10px;
+            border-bottom: 1px solid rgba(27, 27, 27, 0.945);
+            font-size: 1.2rem;
+            letter-spacing: 0.2px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .value {
+            display: grid;
+            grid-template-columns: 1fr 3.5fr 2fr 3fr 3fr 3fr 5fr 2fr 2fr;
+            background-color: rgb(200, 226, 255);
+            color: rgba(27, 27, 27, 0.945);
+        }
+    </style>
+    <div class="label">
+        <p>Id</p>
+        <p>Name</p>
+        <p>Gender</p>
+        <p>Date Of Birth</p>
+        <p>City</p>
+        <p>State</p>
+        <p>Email Id</p>
+        <p>Qualification</p>
+        <p>Stream</p>
+    </div>
+    {% for student in allStudents[1:] %}
+        <div class="value">
+            <p class="student-id">{{ student[0] }}</p>
+            <p class="student-name">{{ student[1] }}</p>
+            <p class="gender">{{ student[2] }}</p>
+            <p class="dob">{{ student[3] }}</p>
+            <p class="city">{{ student[4] }}</p>
+            <p class="state">{{ student[5] }}</p>
+            <p class="email">{{ student[6] }}</p>
+            <p class="qualification">{{ student[7]}}</p>
+            <p class="stream">{{ student[8]}}</p>
+        </div>
+    {% endfor %}
+</body>
+
+</html>

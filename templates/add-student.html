@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='add-student-style.css')}}">
+</head>
+<body>
+    <form action="{{  url_for('detailSubmit')}}" method="POST">
+            <label for="student-id">Student ID</label>
+            <input type="text" name="student-id" id="student-id" required>
+            
+            <label for="student-name">Student Name</label>
+            <input type="text" name="student-name" id="student-name" required>
+            
+            <label for="gender">Gender</label>
+            <div class="male radio">
+                <input type="radio" name="gender" value="male" id="gender">
+                <p>Male</p>
+            </div>
+            <div class="female radio">
+                <input type="radio" name="gender" value="female" id="gender" >
+                <p>Female</p>
+            </div>
+            
+            
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+            
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" required>
+            
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" required>
+            
+            <label for="email-id">Email Id</label>
+            <input type="email" name="email-id" id="email-id" required>
+            
+            <label for="qualification">Qualification</label>
+            <input type="text" name="qualification" id="qualification" required>
+            
+            <label for="stream">Stream</label>
+            <input type="text" name="stream" id="stream" required>
+            
+            <input type="submit" name="submit" value="submit" id="submit">
+    </form>
+</body>
+</html>
